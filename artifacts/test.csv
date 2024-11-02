@@ -1,0 +1,21 @@
+Participant ID,Age,Gender,Current Weight (lbs),BMR (Calories),Daily Calories Consumed,Daily Caloric Surplus/Deficit,Weight Change (lbs),Duration (weeks),Physical Activity Level,Sleep Quality,Stress Level,Final Weight (lbs)
+42,26,M,202.9,2997.7,3803.8,806.0,-5.0069824297658885,9,Sedentary,Poor,5,197.9
+30,33,M,169.3,2627.2,4000.0,1372.8,4.4,11,Very Active,Fair,3,173.7
+34,24,M,181.3,2792.2,3944.2,1152.0,-9.771601340685311,7,Lightly Active,Good,8,171.5
+66,48,M,203.1,2889.6,3451.7,562.2,0.6,3,Sedentary,Good,1,203.7
+75,41,F,156.1,2207.7,3458.1,1250.4,-5.269542514134649,6,Moderately Active,Fair,8,150.8
+7,36,M,107.3,1991.3,2933.4,942.1,-2.4373069574334685,2,Moderately Active,Poor,5,104.9
+58,21,F,175.4,2500.7,3314.8,814.2,-2.657720364556517,5,Sedentary,Poor,3,172.7
+90,34,F,129.7,1978.4,2773.9,795.4,-6.556784362757872,12,Lightly Active,Poor,7,123.1
+88,41,M,196.2,2855.4,3623.3,767.9,-11.25001497731698,8,Sedentary,Fair,8,184.9
+99,45,M,179.8,2671.9,4000.0,1328.1,2.0,5,Moderately Active,Fair,5,181.8
+1,56,M,228.4,3102.3,3916.0,813.7,0.2,1,Sedentary,Excellent,6,228.6
+65,31,F,189.6,2592.4,4000.0,1407.6,-4.7548210457547535,3,Very Active,Poor,6,184.8
+82,42,F,174.4,2385.6,2829.4,443.8,0.8,8,Lightly Active,Fair,4,175.2
+73,33,F,169.9,2385.0,3795.2,1410.2,-12.995120975734803,5,Moderately Active,Poor,9,156.9
+67,32,F,114.5,1836.6,2724.7,888.2,-5.659246675127809,4,Very Active,Poor,5,108.8
+92,52,F,181.8,2409.8,2640.7,230.9,1.0,10,Lightly Active,Excellent,7,182.8
+96,59,M,181.9,2622.8,3656.2,1033.4,0.6,2,Lightly Active,Excellent,3,182.5
+64,53,F,163.2,2218.5,2927.5,709.0,-1.5802498228366064,4,Sedentary,Poor,5,161.6
+60,35,M,138.1,2304.3,3424.8,1120.5,1.5,5,Lightly Active,Excellent,5,139.6
+47,24,F,144.9,2180.2,3225.2,1045.0,-5.579717764413837,9,Lightly Active,Poor,7,139.3
