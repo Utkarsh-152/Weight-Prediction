@@ -29,10 +29,10 @@ class DataTransformation:
                                  'CurrentWeight', 
                                  'BMR',
                                  'DailyCaloriesConsumed', 
-                                 'CaloricSurplusOrDeficit',
-                                 'WeightChange', 
+                                 'CaloricSurplusOrDeficit', 
                                  'Duration', 
-                                 'StressLevel']
+                                 'StressLevel',
+                                 'WeightChange']
             categorical_columns = ['Gender', 'PhysicalActivityLevel', 'SleepQuality']
             numerical_pipeline = Pipeline(
                 steps=[

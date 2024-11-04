@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Weight Prediction</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Styling */
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #00c6ff, #0072ff);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        /* Container */
+        .container {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            max-width: 700px;
+            width: 100%;
+            text-align: center;
+        }
+
+        /* Header Styling */
+        header h1 {
+            color: #0072ff;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        /* Form Styling */
+        form label {
+            display: block;
+            text-align: left;
+            margin: 10px 0 5px;
+            color: #333;
+            font-weight: bold;
+        }
+
+        form input, form select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        /* Button Styling */
+        .btn {
+            width: 100%;
+            padding: 12px;
+            background-color: #0072ff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.1em;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #005bb5;
+        }
+
+        /* Result Section */
+        .result-section {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #f4f4f4;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .result-section h2 {
+            color: #0072ff;
+            font-size: 1.8em;
+        }
+
+        .result-section p {
+            font-size: 1.2em;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Final Weight Prediction</h1>
+            <p>Enter your details below to predict your final weight.</p>
+        </header>
+
+        <form action="/data_pred" method="POST">
+            <label for="Age">Age:</label>
+            <input type="number" id="Age" name="Age" required>
+
+            <label for="Gender">Gender:</label>
+            <select id="Gender" name="Gender" required>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <label for="CurrentWeight">Current Weight (lbs):</label>
+            <input type="number" id="CurrentWeight" name="CurrentWeight" step="0.1" required>
+
+            <label for="BMR">Basal Metabolic Rate (BMR) in cal:</label>
+            <input type="number" id="BMR" name="BMR" step="0.1" required>
+
+            <label for="DailyCaloriesConsumed">Daily Calories Consumed (cal):</label>
+            <input type="number" id="DailyCaloriesConsumed" name="DailyCaloriesConsumed" step="0.1" required>
+
+            <label for="CaloricSurplusOrDeficit">Caloric Surplus or Deficit:</label>
+            <input type="number" id="CaloricSurplusOrDeficit" name="CaloricSurplusOrDeficit" step="0.1" required>
+
+            <label for="WeightChange">Weight Change (lbs):</label>
+            <input type="number" id="WeightChange" name="WeightChange" step="0.1" required>
+
+            <label for="Duration">Duration (weeks):</label>
+            <input type="number" id="Duration" name="Duration" required>
+
+            <label for="PhysicalActivityLevel">Physical Activity Level:</label>
+            <select id="PhysicalActivityLevel" name="PhysicalActivityLevel" required>
+                <option value="Low">Low</option>
+                <option value="Moderate">Moderate</option>
+                <option value="High">High</option>
+            </select>
+
+            <label for="SleepQuality">Sleep Quality:</label>
+            <select id="SleepQuality" name="SleepQuality" required>
+                <option value="Poor">Poor</option>
+                <option value="Average">Average</option>
+                <option value="Good">Good</option>
+            </select>
+
+            <label for="StressLevel">Stress Level:</label>
+            <input type="number" id="StressLevel" name="StressLevel" step="0.1" required>
+
+            <button type="submit" class="btn">Predict Final Weight</button>
+        </form>
+
+        {% if results is not none %}
+        <div class="result-section">
+            <h2>Prediction Result</h2>
+            <p>Your predicted final weight is: <strong>{{ results }} lbs</strong></p>
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>

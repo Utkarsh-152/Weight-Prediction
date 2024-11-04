@@ -70,7 +70,3 @@ if __name__=="__main__":
     model_train = ModelTrainer()
     print(model_train.initiate_model_training(train_arr,test_arr))
 
-"""
-    model_train = ModelTrainer()
-    print(model_train.initiate_model_training(train_arr,test_arr))
-"""
